@@ -1,7 +1,9 @@
 import javax.swing.*;
+import java.applet.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+
 
 public class Game extends JFrame implements KeyListener {
 
@@ -73,7 +75,12 @@ public class Game extends JFrame implements KeyListener {
     public static void main(String[] args){
         new Game();
     }
-
+  
+}  
+public class Main extends Applet{
+   public void paint(Graphics g){
+      g.drawString("Welcome in Java Applet.",40,20);
+   }
 }
 
 
